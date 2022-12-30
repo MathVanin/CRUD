@@ -8,11 +8,7 @@ import java.util.Date;
 import java.util.UUID;
 @Data
 @Builder
-public class ProdutoDto {
-    @Nonnull
-    Long id;
-    @Nonnull
-    UUID uuid;
+public class ProdutoCadastroDto {
     @Nonnull
     String codigoInterno;
     @Nonnull

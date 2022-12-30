@@ -26,5 +26,6 @@ CREATE TABLE Produtos (
   PESOBRUTO real,
   PESOLIQUIDO real,
   VALORCOMPRA numeric(10,2),
-  VALORVENDA numeric(10,2)
+  VALORVENDA numeric(10,2),
+  DATACADASTRO date
 );
