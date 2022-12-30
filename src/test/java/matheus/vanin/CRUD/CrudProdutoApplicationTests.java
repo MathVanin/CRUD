@@ -1,4 +1,4 @@
-package matheus.vanin.CRUDProdutos;
+package matheus.vanin.CRUD;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

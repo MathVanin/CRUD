@@ -1,18 +1,15 @@
-package matheus.vanin.CRUDProdutos.Dto;
+package matheus.vanin.CRUD.Dto;
 
 import jakarta.annotation.Nonnull;
 import lombok.Builder;
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.Date;
-import java.util.UUID;
+
 @Data
 @Builder
-public class ProdutoDto {
-    @Nonnull
-    Long id;
-    @Nonnull
-    UUID uuid;
+public class ProdutoCadastroDto implements Serializable {
     @Nonnull
     String codigoInterno;
     @Nonnull

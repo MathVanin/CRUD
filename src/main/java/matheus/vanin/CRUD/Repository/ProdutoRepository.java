@@ -1,6 +1,6 @@
-package matheus.vanin.CRUDProdutos.Repository;
+package matheus.vanin.CRUD.Repository;
 
-import matheus.vanin.CRUDProdutos.Domain.Produto;
+import matheus.vanin.CRUD.Domain.Produto;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

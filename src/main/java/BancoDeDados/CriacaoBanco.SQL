@@ -27,5 +27,19 @@ CREATE TABLE Produtos (
   PESOLIQUIDO real,
   VALORCOMPRA numeric(10,2),
   VALORVENDA numeric(10,2),
-  DATACADASTRO date
+  DATACADASTRO date,
+  ATIVO boolean,
+  DATAATUALIZACAO date
+);
+
+-- CRIA TABELA DE USUARIOS
+
+CREATE TABLE Usuarios (
+  IDUSUARIO serial PRIMARY KEY,
+  UUIDUSUARIO uuid NOT NULL,
+  NOME varchar(80) NOT NULL,
+  LOGIN varchar(20) NOT NULL,
+  SENHA varchar(20) NOT NULL,
+  EMAIL varchar(100) NOT NULL,
+  ATIVO boolean
 );

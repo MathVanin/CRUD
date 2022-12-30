@@ -1,19 +1,21 @@
-package matheus.vanin.CRUDProdutos.Dto;
+package matheus.vanin.CRUD.Dto;
 
-import jakarta.annotation.Nonnull;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Builder;
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.UUID;
+
 @Data
 @Builder
-public class ProdutoCadastroDto {
-    @Nonnull
+public class ProdutoDto implements Serializable {
+    @JsonIgnore
+    Long id;
+    UUID uuid;
     String codigoInterno;
-    @Nonnull
     String nome;
-    @Nonnull
     String descricao;
     String descritivo;
     Double largura;
@@ -24,4 +26,6 @@ public class ProdutoCadastroDto {
     Double valorCompra;
     Double valorVenda;
     Date dataCadastro;
+    Boolean ativo;
+    Date dataAtualizacao;
 }

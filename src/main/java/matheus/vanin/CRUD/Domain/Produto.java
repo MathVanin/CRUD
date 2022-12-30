@@ -1,4 +1,4 @@
-package matheus.vanin.CRUDProdutos.Domain;
+package matheus.vanin.CRUD.Domain;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -42,4 +42,8 @@ public class Produto {
     Double valorVenda;
     @Column(name = "DATACADASTRO")
     Date dataCadastro;
+    @Column(name = "ATIVO")
+    Boolean ativo;
+    @Column(name = "DATAATUALIZACAO")
+    Date dataAtualizacao;
 }
